@@ -1,0 +1,83 @@
+.container{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto minmax(400px, auto) auto;
+}
+main{
+    align-items: center;
+}
+main h1{
+    padding: 0.5em;
+    font-size: 2.5em;
+    align-self: center;
+    color: rgb(20, 19, 19);
+}
+.contactform{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(5, auto);
+    text-align: left;
+    margin: 3em auto 4em 3em;
+}
+
+.contactform div{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.5em;
+    margin-right: 1em;
+}
+.contactform div input, textarea{
+    padding: 0.35em;
+    border: 2px solid rgb(77, 76, 76);
+    border-radius: 0.25em;
+}
+.contactform div label{
+    font-weight: 400;
+}
+
+.contactform__email{
+    max-width: 300px;
+    background-color: white;
+}
+
+.contactform__message{
+    max-width: 400px;
+}
+.btnsubmit{
+    background-color: coral;
+    max-width: 250px;
+    font-size: 1em;
+    padding: 0.5em;
+    border:none;
+    border-radius: 0.25em;
+}
+.btnsubmit:hover{
+    box-shadow: 0 0 3px 2px rgba(0, 0, 0, 0.3);
+}
+@media screen and (min-width:760px){
+    .contactform{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(5, auto);
+        padding: 0 35% 0 5%;
+        margin-left: 25%;
+    }
+    
+    .contactform div{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 0.5em;
+    }
+    .contactform__email{
+        min-width: 300px;
+        background-color: white;
+    }
+    
+    .contactform__message{
+        min-width: 400px;
+    }
+}
+
+
+
+

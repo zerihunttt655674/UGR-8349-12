@@ -1,0 +1,50 @@
+.main__header{
+    margin: 1em;
+    color: rgb(37, 37, 37);
+    font-size: 1.5em;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+.box div p{
+    padding: 1em 0.5em 0;
+}
+.project{
+    width: 70%;
+    margin: 1em auto;
+}
+.project img{
+    display: block;
+    max-width: 30%;
+
+}
+.project__header{
+    font-size: 1.2em;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 300;
+    padding: 1em 0.5em 0;
+}
+
+@media screen and (min-width:760px){
+    .main__header{
+        margin: 1em;
+        color: rgb(37, 37, 37);
+        font-size: 2em;
+    }
+    .box{
+        flex-direction: row;
+    }
+    .project{
+        width: 70%;
+    }
+    .project div{
+        margin:auto;
+    }
+    .project img{
+        display: block;
+        max-width: 30%;
+    
+    }
+}

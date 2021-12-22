@@ -1,0 +1,49 @@
+
+body{
+    text-align: center;
+    
+}
+
+main{
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+    grid-auto-rows: minmax(200px, auto); 
+   
+}
+main div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.serviceDetail{
+    grid-column:2/3 ;
+    margin: 1em;
+}
+.serviceTable{
+    grid-column:2/3 ;
+}
+.serviceDetail h1{
+    margin: 0.5em;
+}
+table tr td{
+    padding: 2em 3em;
+    background-color: darkgray;
+}
+table tr td:nth-child(2){
+    padding-left: 0;
+    background-color: rgb(129, 127, 127) ;
+}
+table tr td ul{
+    text-align: left;
+    list-style-type: square;
+}
+
+@media screen and (min-width: 760px) {
+   
+    table tr td{
+        padding: 2em 5em;
+        background-color: darkgray;
+    }
+}
+
